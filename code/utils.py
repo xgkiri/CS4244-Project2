@@ -8,7 +8,8 @@ def cnf2string(cnf):
             if variable < 0:
                 s += "!"
             s += str(abs(variable))
-            s += "|"
+            if j != len(clause) - 1:
+                s += "|"
         s += ")"
         if i != (len(cnf) - 1):
             s += "&"

@@ -9,6 +9,6 @@ for i in range(50):
     CNF.append(cnf2string(g.get_cnf()))
 fd = open(os.path.join(root, data_name), "w")
 for j in range(len(CNF)):
-    fd.write(CNF[j])
+    fd.write(CNF[j] + "\n")
 fd.close()
 
